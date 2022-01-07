@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   margin: 0;
 }
 
@@ -41,26 +41,30 @@ header {
   top: 108.24px;
   left: 323px;
 }
+
 .ellipse-4 {
   position: absolute;
   top: 613.1px;
   left: 237px;
 }
+
 .ellipse-5 {
   position: absolute;
   top: 111.81px;
   left: 125px;
 }
+
 .ellipse-8 {
   position: absolute;
   top: 66px;
   left: 214px;
 }
+
 .ellipse-11 {
   position: absolute;
   top: 84.64px;
-  left: 0px;
 }
+
 .ellipse-12 {
   position: absolute;
   top: 489px;
@@ -68,6 +72,7 @@ header {
   width: 24.14px;
   height: 12.07px;
 }
+
 .ellipse-13 {
   position: absolute;
   top: 496.44px;
@@ -76,6 +81,7 @@ header {
   height: 30.1px;
   z-index: 1;
 }
+
 .ellipse-14 {
   position: absolute;
   left: 298px;
@@ -83,6 +89,7 @@ header {
   width: 11px;
   height: 11px;
 }
+
 .ellipse-15 {
   position: absolute;
   left: 53px;
@@ -90,27 +97,32 @@ header {
   width: 15px;
   height: 15px;
 }
+
 .rect-4 {
   position: absolute;
   left: 294px;
   top: 74px;
 }
+
 .rect-5 {
   position: absolute;
   left: 187px;
   top: 609px;
 }
+
 .rect-6 {
   position: absolute;
   right: 366.27px;
   top: 60px;
 }
+
 .rect-7 {
   position: absolute;
   left: 127.18px;
   top: 104px;
   width: 26.46px;
 }
+
 /* Headline */
 
 .headline h1 {
