@@ -21,6 +21,12 @@ header {
   height: 48px;
 }
 
+ul {
+  list-style: none;
+  display: flex;
+  width: 100%;
+}
+
 #logo {
   flex: 1;
 }
