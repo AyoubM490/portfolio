@@ -1,18 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: Poppins;
+  margin: 0;
 }
+
+/* Header */
 
 header {
   padding-right: 6.4%;
   padding-left: 6.4%;
-}
-
-nav {
   display: flex;
   align-items: center;
   list-style: none;
+  height: 48px;
 }
 
 #logo {
@@ -26,4 +32,135 @@ nav {
   font-size: 18px;
   line-height: 20px;
   color: #6070ff;
+}
+
+/* Background-Shapes */
+
+.ellipse-3 {
+  position: absolute;
+  top: 108.24px;
+  left: 323px;
+}
+.ellipse-4 {
+  position: absolute;
+  top: 613.1px;
+  left: 237px;
+}
+.ellipse-5 {
+  position: absolute;
+  top: 111.81px;
+  left: 125px;
+}
+.ellipse-8 {
+  position: absolute;
+  top: 66px;
+  left: 214px;
+}
+.ellipse-11 {
+  position: absolute;
+  top: 84.64px;
+  left: 0px;
+}
+.ellipse-12 {
+  position: absolute;
+  top: 489px;
+  left: 317.67px;
+  width: 24.14px;
+  height: 12.07px;
+}
+.ellipse-13 {
+  position: absolute;
+  top: 496.44px;
+  left: 304px;
+  width: 30.1px;
+  height: 30.1px;
+  z-index: 1;
+}
+.ellipse-14 {
+  position: absolute;
+  left: 298px;
+  top: 271px;
+  width: 11px;
+  height: 11px;
+}
+.ellipse-15 {
+  position: absolute;
+  left: 53px;
+  top: 601px;
+  width: 15px;
+  height: 15px;
+}
+.rect-4 {
+  position: absolute;
+  left: 294px;
+  top: 74px;
+}
+.rect-5 {
+  position: absolute;
+  left: 187px;
+  top: 609px;
+}
+.rect-6 {
+  position: absolute;
+  right: 366.27px;
+  top: 60px;
+}
+.rect-7 {
+  position: absolute;
+  left: 127.18px;
+  top: 104px;
+  width: 26.46px;
+}
+/* Headline */
+
+.headline h1 {
+  width: 327px;
+  height: 150px;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 40px;
+  line-height: 52px;
+  margin-top: 114px;
+  color: #172b4d;
+  margin-right: 24px;
+  margin-left: 24px;
+}
+
+.presentation {
+  width: 327px;
+  height: 146px;
+  margin-top: 12px;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+  margin-right: 24px;
+  margin-left: 24px;
+}
+
+.connect {
+  height: 24px;
+  margin-top: 12px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  margin-left: 24px;
+  color: #7f8cff;
+}
+
+.social-media {
+  display: flex;
+  justify-items: start;
+  height: 20px;
+  align-items: stretch;
+  width: 170.17px;
+  margin-left: 16px;
+  margin-top: 12px;
+}
+
+.flex-item {
+  flex: 1;
 }
