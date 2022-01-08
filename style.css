@@ -352,7 +352,7 @@ ul :nth-child(2n) {
   border-top-right-radius: 85px;
 }
 
-.top h1 {
+.top h2 {
   width: 327px;
   height: 101px;
   text-align: left;
@@ -459,7 +459,7 @@ ul :nth-child(2n) {
   border-top-left-radius: 108px;
 }
 
-.contact-me h1 {
+.contact-me h2 {
   font-weight: 700;
   font-style: normal;
   font-size: 40px;
