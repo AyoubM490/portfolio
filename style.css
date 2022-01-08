@@ -23,6 +23,8 @@ header {
   height: 88.42vh;
   border-bottom-left-radius: 14%;
   grid-area: header;
+  background-image: url("./img/header-shapes-mobile.svg");
+  background-repeat: no-repeat;
 }
 
 nav {
@@ -34,112 +36,22 @@ nav {
   height: 48px;
 }
 
-ul {
-  list-style: none;
-  display: flex;
-  width: 100%;
+nav img {
+  display: block;
 }
 
-#logo {
-  flex: 1;
+li {
+  list-style: none;
 }
 
 .logo {
+  flex: 1;
   text-decoration: none;
   font-weight: 700;
   font-style: normal;
   font-size: 18px;
   line-height: 20px;
   color: #6070ff;
-}
-
-/* Background-Shapes */
-
-.ellipse-3 {
-  position: absolute;
-  top: 108.24px;
-  left: 323px;
-}
-
-.ellipse-4 {
-  position: absolute;
-  top: 613.1px;
-  left: 237px;
-}
-
-.ellipse-5 {
-  position: absolute;
-  top: 111.81px;
-  left: 125px;
-}
-
-.ellipse-8 {
-  position: absolute;
-  top: 66px;
-  left: 214px;
-}
-
-.ellipse-11 {
-  position: absolute;
-  top: 84.64px;
-}
-
-.ellipse-12 {
-  position: absolute;
-  top: 489px;
-  left: 317.67px;
-  width: 24.14px;
-  height: 12.07px;
-}
-
-.ellipse-13 {
-  position: absolute;
-  top: 496.44px;
-  left: 304px;
-  width: 30.1px;
-  height: 30.1px;
-  z-index: 1;
-}
-
-.ellipse-14 {
-  position: absolute;
-  left: 298px;
-  top: 271px;
-  width: 11px;
-  height: 11px;
-}
-
-.ellipse-15 {
-  position: absolute;
-  left: 53px;
-  top: 601px;
-  width: 15px;
-  height: 15px;
-}
-
-.rect-4 {
-  position: absolute;
-  left: 294px;
-  top: 74px;
-}
-
-.rect-5 {
-  position: absolute;
-  left: 187px;
-  top: 609px;
-}
-
-.rect-6 {
-  position: absolute;
-  right: 366.27px;
-  top: 60px;
-}
-
-.rect-7 {
-  position: absolute;
-  left: 127.18px;
-  top: 104px;
-  width: 26.46px;
 }
 
 /* Headline */
