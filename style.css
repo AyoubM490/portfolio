@@ -201,13 +201,9 @@ ul {
   flex: 1;
 }
 
-/* Works */
-.works {
+.card-works {
   margin-top: 114px;
   grid-area: works;
-}
-
-.card-works {
   box-sizing: border-box;
   background-color: white;
   margin-bottom: 88px;
@@ -352,7 +348,7 @@ ul :nth-child(2n) {
   border-top-right-radius: 85px;
 }
 
-.top h2 {
+.base-about-myself h2 {
   width: 327px;
   height: 101px;
   text-align: left;
