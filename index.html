@@ -179,7 +179,7 @@
           <summary class="frame-summary">Frameworks</summary>
         </details>
         <details class="frame">
-          <summary class="frame-summary">Skills</summary>
+          <summary class="frame-summary skills">Skills</summary>
         </details>
       </div>
     </section>
@@ -190,16 +190,19 @@
         that you need built or a project that needs coding. I’d love to help
         with it
       </p>
-      <input type="text" value="Yeremias" />
-      <input type="text" value="natajayanj14@gmail.com" />
-      <textarea
-        name="message"
-        id="message"
-        cols="30"
-        rows="10"
-        placeholder="Write your message here"
-      ></textarea>
-      <button type="submit">Get In Touch</button>
+      <form action="https://formspree.io/f/moqrvgzg" method="POST">
+        <input type="text" placeholder="Yeremias" maxlength="30" required />
+        <input placeholder="natajayanj14@gmail.com" type="email" required />
+        <textarea
+          name="message"
+          id="message"
+          cols="30"
+          rows="10"
+          maxlength="500"
+          placeholder="Write your message here"
+        ></textarea>
+        <button type="submit">Get In Touch</button>
+      </form>
     </section>
   </body>
 </html>
