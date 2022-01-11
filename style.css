@@ -5,23 +5,32 @@
   padding: 0;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: Poppins, sans-serif;
   margin: 0;
   background-color: #e5e5e5;
+  overflow-x: hidden;
   display: grid;
-  grid-template-areas: "header" "works" "footer";
+  grid-template-areas:
+    "header"
+    "works"
+    "base-about-myself"
+    "contact-me";
 }
 
 /* Header */
 
 header {
   background-color: white;
-  height: 88.42vh;
+  height: 674px;
+  width: 375px;
   border-bottom-left-radius: 14%;
+  overflow-x: hidden;
   grid-area: header;
-  background-image: url("./img/header-shapes-mobile.svg");
-  background-repeat: no-repeat;
 }
 
 nav {
@@ -54,6 +63,9 @@ li {
 .headline {
   display: flex;
   flex-direction: column;
+  height: 543.15px;
+  width: 462px;
+  background-image: url("./img/header-shapes-mobile.svg");
 }
 
 .headline h1 {
@@ -110,7 +122,6 @@ li {
 
 .card-works {
   margin-top: 114px;
-  grid-area: works;
   box-sizing: border-box;
   background-color: white;
   margin-bottom: 88px;
@@ -118,11 +129,12 @@ li {
   height: 571px;
   border-radius: 16px;
   border: 1px #dfe1e6 solid;
-  margin-right: auto;
-  margin-left: auto;
+  margin-right: 24px;
+  margin-left: 24px;
   padding: 16px;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 [alt*="Snapshoot Portfolio"] {
@@ -194,29 +206,79 @@ ul :nth-child(2n) {
   margin-left: -6px;
 }
 
-.top {
+.tag {
+  background-color: #ebebff;
+  border-radius: 9px;
+  padding: 4px 12px;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 3%;
+  color: #6070ff;
+}
+
+[type*="button"] {
+  width: 124px;
+  height: 48px;
+  border-radius: 8px;
+  padding: 12px;
+  border: 1px #6070ff solid;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #396df2;
+  background-color: inherit;
+}
+
+section {
+  overflow-x: hidden;
+}
+
+.works {
+  height: 2788px;
+  grid-area: works;
+}
+
+.card-works-1 {
+  height: 596px;
+  box-sizing: border-box;
+  background-color: white;
+  margin-bottom: 88px;
   width: 327px;
-  height: 409px;
-  margin-top: 114px;
-  margin-left: auto;
-  margin-right: auto;
+  border-radius: 16px;
+  border: 1px #dfe1e6 solid;
+  margin-right: 24px;
+  margin-left: 24px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.top {
+  height: 296px;
 }
 
 /* footer */
 
 .base-about-myself {
-  width: 375px;
   height: 1263px;
-  margin-top: 114px;
   background-color: white;
   border-top-right-radius: 85px;
+  padding: 24px;
+  overflow-y: hidden;
+  grid-area: base-about-myself;
 }
 
 .base-about-myself h2 {
-  width: 327px;
   height: 101px;
   text-align: left;
   margin-bottom: 12px;
+  margin-top: 114px;
   font-weight: 700;
   font-size: 40px;
   font-style: normal;
@@ -227,8 +289,6 @@ ul :nth-child(2n) {
 .top-presentation {
   width: 327px;
   height: 144px;
-  margin-right: auto;
-  margin-left: auto;
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
@@ -252,6 +312,93 @@ ul :nth-child(2n) {
   height: 20px;
   align-items: stretch;
   width: 170.17px;
+  margin-top: 16px;
+}
+
+.normal-button {
+  width: 162px;
+  height: 48px;
+  border-radius: 8px;
+  padding: 12px;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 17px;
+  line-height: 24px;
+  color: #396df2;
+  margin-top: 22px;
+  border: 1px solid #6070ff;
+}
+
+.skill-list {
+  width: 327px;
+  height: 496px;
+  margin-top: 36px;
+}
+
+.frame {
+  border-bottom: 1px solid #dfe1e6;
+  padding-bottom: 24px;
+  padding-top: 24px;
+}
+
+.frame-summary {
+  list-style: none;
+  padding-left: 12px;
+  background-image: url(./img/chevron-right.svg);
+  background-repeat: no-repeat;
+  background-position: 279px;
+  background-size: 24px 24px;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.frame[open] .frame-summary {
+  list-style: none;
+  padding-left: 12px;
+  background-image: url(./img/chevron-down.svg);
+  background-repeat: no-repeat;
+  background-position: 279px;
+  background-size: 24px 24px;
+}
+
+.language-list {
+  padding: 12px;
+  margin-top: 24px;
+}
+
+/* Contact Me */
+.contact-me {
+  width: 375px;
+  height: 779px;
+  margin-top: -138px;
+  background-color: #6070ff;
+  border-top-left-radius: 108px;
+  background-image:
+    url("./img/contact-form-shapes-mobile@2x.svg"),
+    url("./img/Shape.svg");
+  background-position: 153px 21px, 120px 766px;
+  background-repeat: no-repeat;
+  padding-left: 24px;
+  overflow-x: hidden;
+  grid-area: contact-me;
+}
+
+.contact-me h2 {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: white;
+  padding-top: 89px;
+  width: 801px;
+  height: 56px;
+  margin-left: -237px;
+}
+
+.contact-me p {
   margin-top: 12px;
   font-weight: 400;
   font-style: normal;
@@ -259,11 +406,11 @@ ul :nth-child(2n) {
   line-height: 28px;
   text-align: center;
   color: #ebebff;
-  margin-right: 24px;
-  margin-left: 24px;
+  width: 327px;
+  height: 102px;
 }
 
-[value*="Yeremias"] {
+[placeholder*="Yeremias"] {
   display: block;
   box-sizing: border-box;
   min-width: 327px;
@@ -271,8 +418,6 @@ ul :nth-child(2n) {
   border-radius: 8px;
   background-color: white;
   border: 1px solid #cfd8dc;
-  margin-right: 24px;
-  margin-left: 24px;
   margin-top: 87px;
   padding-left: 16px;
   padding-right: 16px;
@@ -283,7 +428,7 @@ ul :nth-child(2n) {
   color: #172b4d;
 }
 
-[value*="natajayan"] {
+[placeholder*="natajayan"] {
   padding-right: 16px;
   font-weight: 400;
   box-sizing: border-box;
@@ -297,8 +442,6 @@ ul :nth-child(2n) {
   border-radius: 8px;
   background-color: white;
   border: 1px solid #cfd8dc;
-  margin-right: 24px;
-  margin-left: 24px;
   margin-top: 20px;
   padding-left: 16px;
 }
@@ -307,8 +450,6 @@ ul :nth-child(2n) {
   width: 327px;
   box-sizing: border-box;
   height: 170px;
-  margin-left: 24px;
-  margin-right: 24px;
   margin-top: 18px;
   border-radius: 8px;
   border: 1px solid #cfd8dc;
@@ -336,4 +477,28 @@ ul :nth-child(2n) {
   letter-spacing: 0.03em;
   text-align: center;
   margin-top: 22px;
+  border: transparent;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 327px;
+}
+
+/* Button States */
+
+button:hover {
+  background-color: #6070ff;
+  color: white;
+}
+
+button:active {
+  background-color: #2230d2;
+  color: white;
+}
+
+button:disabled {
+  background-color: #c1c7d0;
+  color: #5e6c84;
 }
