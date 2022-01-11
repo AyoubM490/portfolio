@@ -23,8 +23,9 @@ header {
   height: 674px;
   width: 375px;
   border-bottom-left-radius: 14%;
-  background-repeat: no-repeat;
   overflow-x: hidden;
+  background-image: url("./img/header-shapes-mobile.svg");
+  background-repeat: no-repeat;
 }
 
 nav {
@@ -53,8 +54,6 @@ li {
   line-height: 20px;
   color: #6070ff;
 }
-
-/* Headline */
 
 .headline {
   display: flex;
@@ -472,13 +471,8 @@ section {
   margin-top: 22px;
 }
 
-.homepage-indicator {
-  position: relative;
-  top: 52px;
-  left: -50px;
-}
-
 /* Button States */
+
 button:hover {
   background-color: #6070ff;
   color: white;
