@@ -14,6 +14,12 @@ body {
   margin: 0;
   background-color: #e5e5e5;
   overflow-x: hidden;
+  display: grid;
+  grid-template-areas:
+    "header"
+    "works"
+    "base-about-myself"
+    "contact-me";
 }
 
 /* Header */
@@ -25,6 +31,7 @@ header {
   border-bottom-left-radius: 14%;
   background-repeat: no-repeat;
   overflow-x: hidden;
+  grid-area: header;
 }
 
 nav {
@@ -236,6 +243,7 @@ section {
 
 .works {
   height: 2788px;
+  grid-area: works;
 }
 
 .card-works-1 {
@@ -266,6 +274,7 @@ section {
   border-top-right-radius: 85px;
   padding: 24px;
   overflow-y: hidden;
+  grid-area: base-about-myself;
 }
 
 .base-about-myself h2 {
@@ -369,13 +378,13 @@ section {
   margin-top: -138px;
   background-color: #6070ff;
   border-top-left-radius: 108px;
-  background-image:
-    url("./img/contact-form-shapes-mobile@2x.svg"),
+  background-image: url("./img/contact-form-shapes-mobile@2x.svg"),
     url("./img/Shape.svg");
   background-position: 153px 21px, 120px 766px;
   background-repeat: no-repeat;
   padding-left: 24px;
   overflow-x: hidden;
+  grid-area: contact-me;
 }
 
 .contact-me h2 {
