@@ -29,7 +29,6 @@ header {
   height: 674px;
   width: 375px;
   border-bottom-left-radius: 14%;
-  background-repeat: no-repeat;
   overflow-x: hidden;
   grid-area: header;
 }
@@ -60,8 +59,6 @@ li {
   line-height: 20px;
   color: #6070ff;
 }
-
-/* Headline */
 
 .headline {
   display: flex;
@@ -378,7 +375,8 @@ section {
   margin-top: -138px;
   background-color: #6070ff;
   border-top-left-radius: 108px;
-  background-image: url("./img/contact-form-shapes-mobile@2x.svg"),
+  background-image:
+    url("./img/contact-form-shapes-mobile@2x.svg"),
     url("./img/Shape.svg");
   background-position: 153px 21px, 120px 766px;
   background-repeat: no-repeat;
@@ -481,13 +479,8 @@ section {
   margin-top: 22px;
 }
 
-.homepage-indicator {
-  position: relative;
-  top: 52px;
-  left: -50px;
-}
-
 /* Button States */
+
 button:hover {
   background-color: #6070ff;
   color: white;
