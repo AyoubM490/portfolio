@@ -5,26 +5,26 @@
   padding: 0;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: Poppins, sans-serif;
   margin: 0;
   background-color: #e5e5e5;
-  display: grid;
-  grid-template-areas:
-    "header"
-    "works"
-    "footer";
+  overflow-x: hidden;
 }
 
 /* Header */
 
 header {
   background-color: white;
-  height: 88.42vh;
+  height: 674px;
+  width: 375px;
   border-bottom-left-radius: 14%;
-  grid-area: header;
-  background-image: url("./img/header-shapes-mobile.svg");
   background-repeat: no-repeat;
+  overflow-x: hidden;
 }
 
 nav {
@@ -59,6 +59,9 @@ li {
 .headline {
   display: flex;
   flex-direction: column;
+  height: 543.15px;
+  width: 462px;
+  background-image: url("./img/header-shapes-mobile.svg");
 }
 
 .headline h1 {
@@ -115,7 +118,6 @@ li {
 
 .card-works {
   margin-top: 114px;
-  grid-area: works;
   box-sizing: border-box;
   background-color: white;
   margin-bottom: 88px;
@@ -123,11 +125,12 @@ li {
   height: 571px;
   border-radius: 16px;
   border: 1px #dfe1e6 solid;
-  margin-right: auto;
-  margin-left: auto;
+  margin-right: 24px;
+  margin-left: 24px;
   padding: 16px;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 [alt*="Snapshoot Portfolio"] {
@@ -227,6 +230,14 @@ ul :nth-child(2n) {
   background-color: inherit;
 }
 
+section {
+  overflow-x: hidden;
+}
+
+.works {
+  height: 2788px;
+}
+
 .card-works-1 {
   height: 596px;
   box-sizing: border-box;
@@ -235,36 +246,33 @@ ul :nth-child(2n) {
   width: 327px;
   border-radius: 16px;
   border: 1px #dfe1e6 solid;
-  margin-right: auto;
-  margin-left: auto;
+  margin-right: 24px;
+  margin-left: 24px;
   padding: 16px;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 .top {
-  width: 327px;
-  height: 409px;
-  margin-top: 114px;
-  margin-left: auto;
-  margin-right: auto;
+  height: 296px;
 }
 
 /* footer */
 
 .base-about-myself {
-  width: 375px;
-  height: 1263px;
-  margin-top: 114px;
+  height: 987px;
   background-color: white;
   border-top-right-radius: 85px;
+  padding: 24px;
+  overflow-y: hidden;
 }
 
 .base-about-myself h2 {
-  width: 327px;
   height: 101px;
   text-align: left;
   margin-bottom: 12px;
+  margin-top: 114px;
   font-weight: 700;
   font-size: 40px;
   font-style: normal;
@@ -275,8 +283,6 @@ ul :nth-child(2n) {
 .top-presentation {
   width: 327px;
   height: 144px;
-  margin-right: auto;
-  margin-left: auto;
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
@@ -321,8 +327,6 @@ ul :nth-child(2n) {
   width: 327px;
   height: 496px;
   margin-top: 36px;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .frame {
@@ -362,9 +366,15 @@ ul :nth-child(2n) {
 .contact-me {
   width: 375px;
   height: 779px;
-  margin-top: 113.85px;
+  margin-top: -138px;
   background-color: #6070ff;
   border-top-left-radius: 108px;
+  background-image: url("./img/contact-form-shapes-mobile@2x.svg"),
+    url("./img/Shape.svg");
+  background-position: 153px 21px, 120px 766px;
+  background-repeat: no-repeat;
+  padding-left: 24px;
+  overflow-x: hidden;
 }
 
 .contact-me h2 {
@@ -374,7 +384,10 @@ ul :nth-child(2n) {
   line-height: 52px;
   text-align: center;
   color: white;
-  padding-top: 103px;
+  padding-top: 89px;
+  width: 801px;
+  height: 56px;
+  margin-left: -237px;
 }
 
 .contact-me p {
@@ -387,8 +400,6 @@ ul :nth-child(2n) {
   color: #ebebff;
   width: 327px;
   height: 102px;
-  margin-right: 24px;
-  margin-left: 24px;
 }
 
 [value*="Yeremias"] {
@@ -399,8 +410,6 @@ ul :nth-child(2n) {
   border-radius: 8px;
   background-color: white;
   border: 1px solid #cfd8dc;
-  margin-right: 24px;
-  margin-left: 24px;
   margin-top: 87px;
   padding-left: 16px;
   padding-right: 16px;
@@ -425,8 +434,6 @@ ul :nth-child(2n) {
   border-radius: 8px;
   background-color: white;
   border: 1px solid #cfd8dc;
-  margin-right: 24px;
-  margin-left: 24px;
   margin-top: 20px;
   padding-left: 16px;
 }
@@ -435,8 +442,6 @@ ul :nth-child(2n) {
   width: 327px;
   box-sizing: border-box;
   height: 170px;
-  margin-left: 24px;
-  margin-right: 24px;
   margin-top: 18px;
   border-radius: 8px;
   border: 1px solid #cfd8dc;
@@ -464,42 +469,6 @@ ul :nth-child(2n) {
   letter-spacing: 0.03em;
   text-align: center;
   margin-top: 22px;
-}
-
-/* Footer Background Shapes */
-.footer-background-shapes {
-  position: relative;
-  margin-top: 113.85px;
-}
-
-.ellipse-3-footer {
-  position: absolute;
-  left: 328px;
-  top: 48.75px;
-}
-
-.ellipse-5-footer {
-  position: absolute;
-  left: 253.28px;
-  top: 695.27px;
-}
-
-.ellipse-12-footer {
-  position: absolute;
-  left: 153px;
-  top: 55px;
-}
-
-.rect-4-footer {
-  position: absolute;
-  left: 310px;
-  top: 22px;
-}
-
-.rect-7-footer {
-  position: absolute;
-  left: 251.8px;
-  top: 666.97px;
 }
 
 .homepage-indicator {
