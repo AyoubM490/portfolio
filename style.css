@@ -600,10 +600,9 @@ button:disabled {
   }
 
   .card-works-desktop {
-    width: 1156px;
     height: 496px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 15%;
+    margin-right: 15%;
     display: grid;
     grid-template-areas:
       "image title"
@@ -705,10 +704,9 @@ button:disabled {
   }
 
   .card-works-desktop-1 {
-    width: 1156px;
     height: 496px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 15%;
+    margin-right: 15%;
     display: grid;
     grid-template-areas:
       "title image"
