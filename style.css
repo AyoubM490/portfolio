@@ -375,8 +375,7 @@ section {
   margin-top: -138px;
   background-color: #6070ff;
   border-top-left-radius: 108px;
-  background-image:
-    url("./img/contact-form-shapes-mobile@2x.svg"),
+  background-image: url("./img/contact-form-shapes-mobile@2x.svg"),
     url("./img/Shape.svg");
   background-position: 153px 21px, 120px 766px;
   background-repeat: no-repeat;
@@ -517,7 +516,7 @@ button:disabled {
   }
 
   header {
-    width: 1400px;
+    width: 100vw;
     height: 916px;
     overflow-y: hidden;
   }
@@ -747,7 +746,7 @@ button:disabled {
 
   .works {
     height: 2694px;
-    width: 1400px;
+    width: 100vw;
   }
 
   .base-about-myself-desktop {
@@ -757,7 +756,7 @@ button:disabled {
       "top skill-list";
     grid-template-columns: 1fr 1.5fr;
     height: 924px;
-    width: 1440px;
+    width: 100vw;
     color: #091e42;
     border-top-right-radius: 269px;
     background-color: white;
@@ -813,7 +812,7 @@ button:disabled {
 
   .contact-me-desktop {
     height: 846px;
-    width: 1440px;
+    width: 100vw;
     background-color: #6070ff;
     border-top-left-radius: 108px;
     background-image: url(./img/contact-form-background-shapes.svg);
