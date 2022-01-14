@@ -150,6 +150,7 @@ li {
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 [alt*="Snapshoot Portfolio"] {
@@ -178,10 +179,6 @@ li {
   width: 236px;
   height: 32px;
   margin-left: -4px;
-}
-
-ul :nth-child(2n) {
-  display: flex;
 }
 
 .client {
@@ -233,7 +230,7 @@ ul :nth-child(2n) {
   color: #6070ff;
 }
 
-[type*="button"] {
+.button-mobile {
   width: 124px;
   height: 48px;
   border-radius: 8px;
@@ -254,7 +251,7 @@ section {
 }
 
 .works {
-  height: 2788px;
+  height: 2854px;
   grid-area: works;
 }
 
@@ -342,6 +339,7 @@ section {
   color: #396df2;
   margin-top: 22px;
   border: 1px solid #6070ff;
+  background-color: white;
 }
 
 .skill-list {
@@ -390,8 +388,7 @@ section {
   margin-top: -138px;
   background-color: #6070ff;
   border-top-left-radius: 108px;
-  background-image:
-    url("./img/contact-form-shapes-mobile@2x.svg"),
+  background-image: url("./img/contact-form-shapes-mobile@2x.svg"),
     url("./img/Shape.svg");
   background-position: 153px 21px, 120px 766px;
   background-repeat: no-repeat;
@@ -504,7 +501,7 @@ form {
 /* Button States */
 
 button {
-  transition: background-color 4s, color 4s;
+  transition: color 0.5s, background-color 0.5s;
 }
 
 button:hover {
@@ -518,7 +515,6 @@ button:active {
 }
 
 button:disabled {
-  background-color: #c1c7d0;
   color: #5e6c84;
 }
 
@@ -526,7 +522,7 @@ button:disabled {
   display: none;
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1100px) {
   .mobile {
     display: none;
   }
@@ -548,14 +544,6 @@ button:disabled {
 
   a {
     text-decoration: none;
-  }
-
-  .logo {
-    font-weight: 700;
-    font-style: normal;
-    font-size: 18px;
-    line-height: 20px;
-    color: #6070ff;
   }
 
   .portfolio,
@@ -620,8 +608,9 @@ button:disabled {
 
   .card-works-desktop {
     height: 496px;
-    margin-left: 15%;
-    margin-right: 15%;
+    width: 93.57%;
+    margin-left: auto;
+    margin-right: auto;
     display: grid;
     grid-template-areas:
       "image title"
@@ -630,6 +619,7 @@ button:disabled {
     background-color: white;
     margin-top: 142px;
     border-radius: 24px;
+    box-sizing: unset;
   }
 
   .project-title-desktop {
@@ -653,6 +643,7 @@ button:disabled {
     font-weight: 500;
     font-style: normal;
     line-height: 24px;
+    font-size: 18px;
     text-transform: uppercase;
     color: #344563;
     margin-right: 8.36px;
@@ -661,6 +652,7 @@ button:disabled {
   .role-desktop {
     font-style: normal;
     line-height: 24px;
+    font-size: 18px;
     font-weight: 400;
     color: #6b778c;
     margin-left: 8.36px;
@@ -682,6 +674,7 @@ button:disabled {
   .year-label-desktop {
     font-weight: 400;
     font-style: normal;
+    font-size: 18px;
     line-height: 24px;
     color: #6b778c;
     margin-left: 8.36px;
@@ -724,8 +717,9 @@ button:disabled {
 
   .card-works-desktop-1 {
     height: 496px;
-    margin-left: 15%;
-    margin-right: 15%;
+    width: 93.57%;
+    margin-left: auto;
+    margin-right: auto;
     display: grid;
     grid-template-areas:
       "title image"
@@ -734,6 +728,7 @@ button:disabled {
     background-color: white;
     margin-top: 142px;
     border-radius: 24px;
+    box-sizing: unset;
   }
 
   .tags-desktop-width {
@@ -763,7 +758,6 @@ button:disabled {
   }
 
   .works {
-    height: 2694px;
     width: 100vw;
   }
 
@@ -826,6 +820,7 @@ button:disabled {
     text-transform: capitalize;
     margin-top: 34px;
     margin-right: -1px;
+    background-color: white;
   }
 
   .contact-me-desktop {
@@ -851,6 +846,8 @@ button:disabled {
     color: white;
     padding-top: 142px;
     height: 56px;
+    width: 100vw;
+    margin-left: 0px;
   }
 
   .contact-me-desktop p {
@@ -936,8 +933,7 @@ button:disabled {
     text-align: center;
     margin-top: 22px;
     border: transparent;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 34.34%;
   }
 
   img:hover {
