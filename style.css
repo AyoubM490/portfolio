@@ -131,6 +131,17 @@ li {
   margin-top: 12px;
 }
 
+.icons {
+  transform: rotate(0deg);
+  transition-property: transform;
+  transition-delay: 0s;
+  transition-duration: 2s;
+}
+
+.icons:hover {
+  transform: rotate(360deg);
+}
+
 .flex-item {
   flex: 1;
 }
