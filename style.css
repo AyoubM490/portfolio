@@ -27,7 +27,7 @@ body {
 header {
   background-color: white;
   height: 674px;
-  width: 375px;
+  width: 100vw;
   border-bottom-left-radius: 14%;
   overflow-x: hidden;
   grid-area: header;
