@@ -397,8 +397,7 @@ section {
   margin-top: -138px;
   background-color: #6070ff;
   border-top-left-radius: 108px;
-  background-image:
-    url("./img/contact-form-shapes-mobile@2x.svg"),
+  background-image: url("./img/contact-form-shapes-mobile@2x.svg"),
     url("./img/Shape.svg");
   background-position: 153px 21px, 120px 766px;
   background-repeat: no-repeat;
@@ -532,7 +531,7 @@ button:disabled {
   display: none;
 }
 
-@media only screen and (min-width: 1100px) {
+@media only screen and (min-width: 992px) {
   .mobile {
     display: none;
   }

@@ -310,13 +310,33 @@
         that you need built or a project that needs coding. I’d love to help
         with it
       </p>
-      <form
-        action="https://formspree.io/f/moqrvgzg"
-        method="POST"
-        class="mobile"
-      >
-        <input type="text" placeholder="Yeremias" maxlength="30" required />
-        <input placeholder="natajayanj14@gmail.com" type="email" required />
+      <form action="https://formspree.io/f/moqrvgzg" method="POST">
+        <input
+          type="text"
+          placeholder="Yeremias"
+          maxlength="30"
+          required
+          class="mobile"
+        />
+        <input
+          type="text"
+          placeholder="Alexandra Loremipsum"
+          maxlength="30"
+          required
+          class="desktop"
+        />
+        <input
+          placeholder="natajayanj14@gmail.com"
+          type="email"
+          required
+          class="mobile"
+        />
+        <input
+          placeholder="alexandra@gmail.com"
+          type="email"
+          required
+          class="desktop"
+        />
         <textarea
           name="message"
           id="message"
@@ -325,21 +345,8 @@
           maxlength="500"
           required
           placeholder="Write your message here"
+          class="mobile"
         ></textarea>
-        <button type="submit">Get In Touch</button>
-      </form>
-      <form
-        action="https://formspree.io/f/moqrvgzg"
-        method="POST"
-        class="desktop"
-      >
-        <input
-          type="text"
-          placeholder="Alexandra Loremipsum"
-          maxlength="30"
-          required
-        />
-        <input placeholder="alexandra@gmail.com" type="email" required />
         <textarea
           name="message"
           id="message-desktop"
@@ -348,8 +355,10 @@
           maxlength="500"
           required
           placeholder="Write your message here"
+          class="desktop"
         ></textarea>
-        <button type="submit" class="get-in-touch">Get In Touch</button>
+        <button type="submit" class="mobile">Get In Touch</button>
+        <button type="submit" class="get-in-touch desktop">Get In Touch</button>
       </form>
     </section>
     <!-- Global site tag (gtag.js) - Google Analytics -->
