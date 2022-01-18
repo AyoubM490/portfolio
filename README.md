@@ -2,6 +2,10 @@
 This Portfolio is meant to show my skills
 
 ![Screenshot from 2022-01-08 05-30-06](https://user-images.githubusercontent.com/95053734/148631413-417d8087-af52-4fa9-af69-9ab598014df0.png)
+
+## Live Demo
+Use this [link](https://ayoubms.github.io/portfolio/) for live demo
+
 ## Built With
 - Html5 and CSS3
 
