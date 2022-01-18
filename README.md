@@ -16,6 +16,8 @@ To clone the repository, please follow use this [link](https://github.com/AyoubM
 - Github: [@AyoubMs](https://github.com/AyoubMs)
 - Twitter: [@ChahirDev](https://twitter.com/ChahirDev)
 - LinkedIn: [Ayoub Chahir](https://www.linkedin.com/in/ayoub-chahir/)
+### Jerry Owusu
+- Github: [@jerryowusu](https://github.com/jerryowusu)
 ## Show your support
 Please give a ⭐️ if you love this project.
 ## Acknowledgments
