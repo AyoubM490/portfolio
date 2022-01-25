@@ -68,6 +68,7 @@ menuClose.addEventListener('click', () => {
   portfolioNav.classList.add('desktop');
   aboutNav.classList.add('desktop');
   contactNav.classList.add('desktop');
+  header.style.overflowY = 'hidden';
 });
 
 portfolioNav.addEventListener('click', () => {
@@ -278,7 +279,7 @@ closeBtnDesk.addEventListener('click', () => {
   headline.style.opacity = '1';
   headline.style.backgroundColor = '#fff';
   portfolioSection.style.display = 'block';
-  aboutSection.style.display = 'block';
+  aboutSection.style.display = 'grid';
   contactSection.style.display = 'block';
   logo.style.display = 'block';
   nav.style.display = 'flex';

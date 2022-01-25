@@ -541,7 +541,7 @@ button:disabled {
   display: none;
 }
 
-header.modal-header {
+.modal-header {
   display: flex;
   align-items: center;
   width: 100%;
@@ -558,6 +558,10 @@ header.modal-header {
 
 .modal-header-desktop h2 {
   flex: 1;
+}
+
+#modal-desktop {
+  display: none;
 }
 
 .row {

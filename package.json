@@ -4,18 +4,21 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+
+  }
+  ,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AyoubMs/personal-portfolio.git"
-  },
+  }
+  ,
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/AyoubMs/personal-portfolio/issues"
-  },
+
+  }
+  ,
   "homepage": "https://github.com/AyoubMs/personal-portfolio#readme",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
