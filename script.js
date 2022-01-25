@@ -1,7 +1,7 @@
 const menuHamb = document.querySelector("[alt *= 'menu']");
 const logo = document.querySelector('.logo');
 const nav = document.querySelector('nav');
-const headline = document.querySelector('.headline');
+const headline = document.querySelector('#headline');
 const header = document.querySelector('header');
 const portfolioSection = document.querySelector('#portfolio');
 const aboutSection = document.querySelector('#about');
@@ -9,6 +9,13 @@ const contactSection = document.querySelector('#contact');
 const portfolioNav = document.querySelector('.portfolio');
 const aboutNav = document.querySelector('.about');
 const contactNav = document.querySelector('.contact');
+const seeProjectBtns = document.querySelectorAll('.see-modal');
+const modal = document.querySelector('.modal');
+const closeBtn = document.querySelector('.close-btn');
+const seeProjectBtnDesks = document.querySelectorAll('.see-modal-desktop');
+const modalDesk = document.querySelector('.modal-desktop');
+const leftBlockModal = document.querySelector('.left-block-modal');
+const closeBtnDesk = document.querySelector('.close-btn-desktop');
 
 function styleMenu(elem) {
   elem.style.color = '#fff';
@@ -61,6 +68,7 @@ menuClose.addEventListener('click', () => {
   portfolioNav.classList.add('desktop');
   aboutNav.classList.add('desktop');
   contactNav.classList.add('desktop');
+  header.style.overflowY = 'hidden';
 });
 
 portfolioNav.addEventListener('click', () => {
@@ -109,4 +117,171 @@ contactNav.addEventListener('click', () => {
   portfolioNav.classList.add('desktop');
   aboutNav.classList.add('desktop');
   contactNav.classList.add('desktop');
+});
+
+seeProjectBtns[0].addEventListener('click', () => {
+  headline.style.opacity = '0.4';
+  headline.style.backgroundColor = '#C1C7D0';
+  portfolioSection.style.display = 'none';
+  aboutSection.style.display = 'none';
+  contactSection.style.display = 'none';
+  logo.style.display = 'none';
+  nav.style.display = 'none';
+  modal.style.display = 'block';
+  modal.style.position = 'absolute';
+  modal.style.top = '-107px';
+  header.style.height = '800px';
+  headline.style.height = '800px';
+});
+
+seeProjectBtns[1].addEventListener('click', () => {
+  headline.style.opacity = '0.4';
+  headline.style.backgroundColor = '#C1C7D0';
+  portfolioSection.style.display = 'none';
+  aboutSection.style.display = 'none';
+  contactSection.style.display = 'none';
+  logo.style.display = 'none';
+  nav.style.display = 'none';
+  modal.style.display = 'block';
+  modal.style.position = 'absolute';
+  modal.style.top = '-107px';
+  header.style.height = '800px';
+  headline.style.height = '800px';
+});
+
+seeProjectBtns[2].addEventListener('click', () => {
+  headline.style.opacity = '0.4';
+  headline.style.backgroundColor = '#C1C7D0';
+  portfolioSection.style.display = 'none';
+  aboutSection.style.display = 'none';
+  contactSection.style.display = 'none';
+  logo.style.display = 'none';
+  nav.style.display = 'none';
+  modal.style.display = 'block';
+  modal.style.position = 'absolute';
+  modal.style.top = '-107px';
+  header.style.height = '800px';
+  headline.style.height = '800px';
+});
+
+seeProjectBtns[3].addEventListener('click', () => {
+  headline.style.opacity = '0.4';
+  headline.style.backgroundColor = '#C1C7D0';
+  portfolioSection.style.display = 'none';
+  aboutSection.style.display = 'none';
+  contactSection.style.display = 'none';
+  logo.style.display = 'none';
+  nav.style.display = 'none';
+  modal.style.display = 'block';
+  modal.style.position = 'absolute';
+  modal.style.top = '-107px';
+  header.style.height = '800px';
+  headline.style.height = '800px';
+});
+
+closeBtn.addEventListener('click', () => {
+  headline.style.opacity = '1';
+  headline.style.backgroundColor = '#fff';
+  portfolioSection.style.display = 'block';
+  aboutSection.style.display = 'block';
+  contactSection.style.display = 'block';
+  logo.style.display = 'block';
+  nav.style.display = 'flex';
+  modal.style.display = 'none';
+  headline.style.height = '543.15px';
+});
+
+seeProjectBtnDesks[0].addEventListener('click', () => {
+  headline.style.opacity = '0.4';
+  headline.style.backgroundColor = '#C1C7D0';
+  portfolioSection.style.display = 'none';
+  aboutSection.style.display = 'none';
+  contactSection.style.display = 'none';
+  logo.style.display = 'none';
+  nav.style.display = 'none';
+  modalDesk.style.display = 'block';
+  modalDesk.style.position = 'absolute';
+  modalDesk.style.zIndex = '10000';
+  modalDesk.style.marginLeft = '24px';
+  modalDesk.style.height = '100.3%';
+  modalDesk.style.top = '-130px';
+  leftBlockModal.style.marginTop = '1%';
+  leftBlockModal.style.marginLeft = '5%';
+  leftBlockModal.style.top = '-20px';
+  header.style.height = '103vh';
+  headline.style.height = '100vh';
+});
+
+seeProjectBtnDesks[1].addEventListener('click', () => {
+  headline.style.opacity = '0.4';
+  headline.style.backgroundColor = '#C1C7D0';
+  portfolioSection.style.display = 'none';
+  aboutSection.style.display = 'none';
+  contactSection.style.display = 'none';
+  logo.style.display = 'none';
+  nav.style.display = 'none';
+  modalDesk.style.display = 'block';
+  modalDesk.style.position = 'absolute';
+  modalDesk.style.zIndex = '10000';
+  modalDesk.style.marginLeft = '24px';
+  modalDesk.style.height = '100.3%';
+  modalDesk.style.top = '-130px';
+  leftBlockModal.style.marginTop = '1%';
+  leftBlockModal.style.marginLeft = '5%';
+  leftBlockModal.style.top = '-20px';
+  header.style.height = '103vh';
+  headline.style.height = '100vh';
+});
+
+seeProjectBtnDesks[2].addEventListener('click', () => {
+  headline.style.opacity = '0.4';
+  headline.style.backgroundColor = '#C1C7D0';
+  portfolioSection.style.display = 'none';
+  aboutSection.style.display = 'none';
+  contactSection.style.display = 'none';
+  logo.style.display = 'none';
+  nav.style.display = 'none';
+  modalDesk.style.display = 'block';
+  modalDesk.style.position = 'absolute';
+  modalDesk.style.zIndex = '10000';
+  modalDesk.style.marginLeft = '24px';
+  modalDesk.style.height = '100.3%';
+  modalDesk.style.top = '-130px';
+  leftBlockModal.style.marginTop = '1%';
+  leftBlockModal.style.marginLeft = '5%';
+  leftBlockModal.style.top = '-20px';
+  header.style.height = '103vh';
+  headline.style.height = '100vh';
+});
+
+seeProjectBtnDesks[3].addEventListener('click', () => {
+  headline.style.opacity = '0.4';
+  headline.style.backgroundColor = '#C1C7D0';
+  portfolioSection.style.display = 'none';
+  aboutSection.style.display = 'none';
+  contactSection.style.display = 'none';
+  logo.style.display = 'none';
+  nav.style.display = 'none';
+  modalDesk.style.display = 'block';
+  modalDesk.style.position = 'absolute';
+  modalDesk.style.zIndex = '10000';
+  modalDesk.style.marginLeft = '24px';
+  modalDesk.style.height = '100.3%';
+  modalDesk.style.top = '-130px';
+  leftBlockModal.style.marginTop = '1%';
+  leftBlockModal.style.marginLeft = '5%';
+  leftBlockModal.style.top = '-20px';
+  header.style.height = '103vh';
+  headline.style.height = '100vh';
+});
+
+closeBtnDesk.addEventListener('click', () => {
+  headline.style.opacity = '1';
+  headline.style.backgroundColor = '#fff';
+  portfolioSection.style.display = 'block';
+  aboutSection.style.display = 'grid';
+  contactSection.style.display = 'block';
+  logo.style.display = 'block';
+  nav.style.display = 'flex';
+  modalDesk.style.display = 'none';
 });
