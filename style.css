@@ -432,7 +432,7 @@ section {
   height: 102px;
 }
 
-[placeholder*="Yeremias"] {
+[placeholder*="Alexandra"] {
   display: block;
   box-sizing: border-box;
   min-width: 327px;
@@ -450,7 +450,7 @@ section {
   color: #172b4d;
 }
 
-[placeholder*="natajayan"] {
+[placeholder*="alexandra"] {
   padding-right: 16px;
   font-weight: 400;
   box-sizing: border-box;
@@ -468,7 +468,7 @@ section {
   padding-left: 16px;
 }
 
-#message {
+#message-desktop {
   width: 327px;
   box-sizing: border-box;
   height: 170px;
@@ -1033,5 +1033,9 @@ hr {
 
   .contact-me-desktop > *:hover {
     transform: translate(7px, 0);
+  }
+
+  [type*="submit"] {
+    margin-left: 153.5px;
   }
 }
