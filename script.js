@@ -12,8 +12,8 @@ const contactNav = document.querySelector('.contact');
 const seeProjectBtns = document.querySelectorAll('.see-modal');
 const modal = document.querySelector('.modal');
 const closeBtn = document.querySelector('.close-btn');
-const modalDesk = document.querySelector('.modal-desktop');
 const seeProjectBtnDesks = document.querySelectorAll('.see-modal-desktop');
+const modalDesk = document.querySelector('.modal-desktop');
 const leftBlockModal = document.querySelector('.left-block-modal');
 const closeBtnDesk = document.querySelector('.close-btn-desktop');
 
