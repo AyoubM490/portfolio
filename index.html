@@ -491,65 +491,48 @@
         that you need built or a project that needs coding. I’d love to help
         with it
       </p>
-      <form action="https://formspree.io/f/moqrvgzg" method="POST">
-        <label for="name-mobile"> </label>
-        <input
-          type="text"
-          placeholder="Yeremias"
-          maxlength="30"
-          required
-          class="mobile"
-          id="name-mobile"
-        />
-        <label for="name-desktop"> </label>
-        <input
-          type="text"
-          placeholder="Alexandra Loremipsum"
-          maxlength="30"
-          required
-          class="desktop"
-          id="name-desktop"
-        />
-        <label for="email-mobile"></label>
-        <input
-          placeholder="natajayanj14@gmail.com"
-          type="email"
-          required
-          class="mobile"
-          id="email-mobile"
-        />
-        <label for="email-desktop"></label>
-        <input
-          placeholder="alexandra@gmail.com"
-          type="email"
-          required
-          class="desktop"
-          id="email-desktop"
-        />
-        <label for="message"></label>
-        <textarea
-          name="message"
-          id="message"
-          cols="30"
-          rows="10"
-          maxlength="500"
-          required
-          placeholder="Write your message here"
-          class="mobile"
-        ></textarea>
-        <label for="message-desktop"></label>
-        <textarea
-          name="message"
-          id="message-desktop"
-          cols="30"
-          rows="10"
-          maxlength="500"
-          required
-          placeholder="Write your message here"
-          class="desktop"
-        ></textarea>
-        <button type="submit" class="mobile">Get In Touch</button>
-        <button type="submit" class="get-in-touch desktop">Get In Touch</button>
+      <form
+        action="https://formspree.io/f/moqrvgzg"
+        method="POST"
+        id="contact-form"
+      >
+        <div class="field">
+          <label for="name-desktop"></label>
+          <input
+            type="text"
+            placeholder="Alexandra Loremipsum"
+            maxlength="30"
+            required
+            id="name-desktop"
+          />
+          <small></small>
+        </div>
+        <div class="field">
+          <label for="email-desktop"></label>
+          <input
+            placeholder="alexandra@gmail.com"
+            type="email"
+            required
+            id="email-desktop"
+          />
+          <small></small>
+        </div>
+        <div class="field">
+          <label for="message-desktop"></label>
+          <textarea
+            name="message"
+            id="message-desktop"
+            cols="30"
+            rows="10"
+            maxlength="500"
+            required
+            placeholder="Write your message here"
+          ></textarea>
+          <small></small>
+        </div>
+        <div class="field">
+          <button type="submit" id="formSend">Get In Touch</button>
+        </div>
       </form>
     </section>
     <!-- Global site tag (gtag.js) - Google Analytics -->
