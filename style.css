@@ -544,7 +544,7 @@ button:disabled {
 .modal-header {
   display: flex;
   align-items: center;
-  width: 100%;
+  width: 100.1%;
   height: auto;
 }
 
