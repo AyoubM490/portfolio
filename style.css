@@ -149,7 +149,7 @@ li {
   box-sizing: border-box;
   background-color: white;
   margin-bottom: 88px;
-  width: 327px;
+  width: 87.2%;
   height: 571px;
   border-radius: 16px;
   border: 1px #dfe1e6 solid;
@@ -269,7 +269,7 @@ section {
   box-sizing: border-box;
   background-color: white;
   margin-bottom: 88px;
-  width: 327px;
+  width: 87.2%;
   border-radius: 16px;
   border: 1px #dfe1e6 solid;
   margin-right: 24px;
@@ -397,8 +397,7 @@ section {
   margin-top: -138px;
   background-color: #6070ff;
   border-top-left-radius: 108px;
-  background-image:
-    url("./img/contact-form-shapes-mobile@2x.svg"),
+  background-image: url("./img/contact-form-shapes-mobile@2x.svg"),
     url("./img/Shape.svg");
   background-position: 153px 21px, 120px 766px;
   background-repeat: no-repeat;
@@ -530,6 +529,83 @@ button:disabled {
 
 .desktop {
   display: none;
+}
+
+.modal {
+  width: 91.4%;
+  height: 750px;
+  margin-right: 16px;
+  margin-left: 16px;
+  z-index: 10000;
+  display: none;
+}
+
+header.modal-header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.modal-header-desktop {
+  display: flex;
+  align-items: center;
+  width: 95%;
+  height: 86px;
+  margin-left: 1%;
+}
+
+.modal-header-desktop h2 {
+  flex: 1;
+}
+
+.row {
+  display: flex;
+  width: 91.27%;
+  margin-left: 4.25%;
+  margin-right: 4.25%;
+}
+
+.col-1 {
+  flex: 1 1 70%;
+}
+
+.col-2 {
+  flex: 1 1 35%;
+}
+
+.modal-header h2 {
+  flex: 1;
+}
+
+.modal-image {
+  margin-bottom: 12px;
+}
+
+.modal-image-desktop {
+  margin-bottom: 12px;
+  width: 100%;
+  height: 50.38%;
+}
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-button {
+  display: flex;
+  justify-content: space-between;
+  width: 154px !important;
+}
+
+.live-icon {
+  margin-bottom: 0px;
 }
 
 @media only screen and (min-width: 992px) {
