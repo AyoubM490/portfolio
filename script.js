@@ -351,24 +351,33 @@ form.addEventListener('submit', (event) => {
     message: messageDesk.value,
   };
   const userStr = JSON.stringify(user);
+  sessionStorage.setItem('user', userStr);
   // if valid, submit the form.
   if (nameDeskValid && emailDeskValid) {
     form.submit();
   }
-  sessionStorage.setItem('user', userStr);
-  localStorage.setItem('user', userStr);
 });
 
-function setForm() {
-  let user = sessionStorage.getItem('user');
-  user = JSON.parse(user);
-  const currentName = user.name;
-  const currentEmail = user.email;
-  const currentMessage = user.message;
-
-  nameDesk.value = currentName;
-  emailDesk.value = currentEmail;
-  messageDesk.value = currentMessage;
+function setReload() {
+  const user = JSON.parse(sessionStorage.getItem('user'));
+  nameDesk.value = user.name || nameDesk.value;
+  emailDesk.value = user.email || emailDesk.value;
+  messageDesk.value = user.message || messageDesk.value;
 }
+
+function setForm() {
+  const user = {
+    name: nameDesk.value,
+    email: emailDesk.value,
+    message: messageDesk.value,
+  };
+  const userStr = JSON.stringify(user);
+  if (user.name || user.email || user.message) {
+    sessionStorage.setItem('user', userStr);
+  }
+}
+
+form.addEventListener('keyup', setForm);
+window.addEventListener('load', setReload);
 
 setForm();
