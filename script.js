@@ -353,7 +353,7 @@ form.addEventListener('submit', (event) => {
   const userStr = JSON.stringify(user);
   // if valid, submit the form.
   if (nameDeskValid && emailDeskValid) {
-    // form.submit();
+    form.submit();
   }
   sessionStorage.setItem('user', userStr);
   localStorage.setItem('user', userStr);
