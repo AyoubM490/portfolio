@@ -19,6 +19,7 @@ const closeBtnDesk = document.querySelector('.close-btn-desktop');
 const form = document.getElementById('contact-form');
 const nameDesk = form.elements['name-desktop'];
 const emailDesk = form.elements['email-desktop'];
+const messageDesk = form.elements['message-desktop'];
 
 function styleMenu(elem) {
   elem.style.color = '#fff';
@@ -344,8 +345,39 @@ form.addEventListener('submit', (event) => {
     EMAIL_REQUIRED,
     EMAIL_INVALID,
   );
+  const user = {
+    name: nameDesk.value,
+    email: emailDesk.value,
+    message: messageDesk.value,
+  };
+  const userStr = JSON.stringify(user);
+  sessionStorage.setItem('user', userStr);
   // if valid, submit the form.
   if (nameDeskValid && emailDeskValid) {
     form.submit();
   }
 });
+
+function setReload() {
+  const user = JSON.parse(sessionStorage.getItem('user'));
+  nameDesk.value = user.name || nameDesk.value;
+  emailDesk.value = user.email || emailDesk.value;
+  messageDesk.value = user.message || messageDesk.value;
+}
+
+function setForm() {
+  const user = {
+    name: nameDesk.value,
+    email: emailDesk.value,
+    message: messageDesk.value,
+  };
+  const userStr = JSON.stringify(user);
+  if (user.name || user.email || user.message) {
+    sessionStorage.setItem('user', userStr);
+  }
+}
+
+form.addEventListener('keyup', setForm);
+window.addEventListener('load', setReload);
+
+setForm();
