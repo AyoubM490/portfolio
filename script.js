@@ -19,6 +19,7 @@ const closeBtnDesk = document.querySelector('.close-btn-desktop');
 const form = document.getElementById('contact-form');
 const nameDesk = form.elements['name-desktop'];
 const emailDesk = form.elements['email-desktop'];
+const messageDesk = form.elements['message-desktop'];
 
 function styleMenu(elem) {
   elem.style.color = '#fff';
@@ -344,8 +345,30 @@ form.addEventListener('submit', (event) => {
     EMAIL_REQUIRED,
     EMAIL_INVALID,
   );
+  const user = {
+    name: nameDesk.value,
+    email: emailDesk.value,
+    message: messageDesk.value,
+  };
+  const userStr = JSON.stringify(user);
   // if valid, submit the form.
   if (nameDeskValid && emailDeskValid) {
-    form.submit();
+    // form.submit();
   }
+  sessionStorage.setItem('user', userStr);
+  localStorage.setItem('user', userStr);
 });
+
+function setForm() {
+  let user = sessionStorage.getItem('user');
+  user = JSON.parse(user);
+  const currentName = user.name;
+  const currentEmail = user.email;
+  const currentMessage = user.message;
+
+  nameDesk.value = currentName;
+  emailDesk.value = currentEmail;
+  messageDesk.value = currentMessage;
+}
+
+setForm();
