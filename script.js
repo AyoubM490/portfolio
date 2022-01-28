@@ -17,7 +17,7 @@ const modalDesk = document.querySelector('.modal-desktop');
 const leftBlockModal = document.querySelector('.left-block-modal');
 const closeBtnDesk = document.querySelector('.close-btn-desktop');
 const form = document.getElementById('contact-form');
-const nameDesk = form.elemens['name-desktop'];
+const nameDesk = form.elements['name-desktop'];
 const emailDesk = form.elements['email-desktop'];
 const messageDesk = form.elements['message-desktop'];
 
