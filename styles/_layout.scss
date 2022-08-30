@@ -1,0 +1,299 @@
+@use 'variables' as *;
+
+.navbar {
+  padding: 1rem 1.5rem;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+
+  &__link {
+    color: $clr-primary-700;
+    animation-name: rotate-logo;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+  }
+
+  &__hamb {
+    cursor: pointer;
+    z-index: 100;
+  }
+}
+
+.head::before {
+  content: '';
+  position: absolute;
+  background-color: $clr-neutral-100;
+  background-image: url('https://raw.githubusercontent.com/ArthurGC/portfolio-microverse/add-set-up-mobile-version--portfolio/images/shapes.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  border-bottom-left-radius: 5rem;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.head {
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  padding: 6rem 1.5rem;
+  z-index: 10;
+
+  &__title {
+    color: $clr-neutral-800;
+    width: 10ch;
+
+    span {
+      display: block;
+      width: 10ch;
+    }
+  }
+
+  &__dsc {
+    margin: 0.8rem 0;
+    color: $clr-neutral-600;
+  }
+
+  &__link {
+    text-transform: uppercase;
+  }
+
+  &__icons {
+    margin: 0.5rem 0;
+    align-items: center;
+    justify-content: space-between;
+    width: 11rem;
+  }
+}
+
+.works {
+  &__cards {
+    grid-template-rows: repeat(3, auto);
+    row-gap: 5.5rem;
+    justify-content: center;
+    padding: 7.125rem 1.5rem;
+  }
+
+  &__card {
+    padding: 1rem 1rem 1.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 1rem;
+    border: 1px solid #dfe1e6;
+
+    &__img {
+      width: 100%;
+    }
+
+    &__subtitle {
+      align-items: center;
+      column-gap: 2rem;
+      margin: 20px 0;
+
+      &-ul {
+        margin: 0;
+        padding: 0;
+      }
+
+      &-li {
+        margin-right: 2rem;
+      }
+    }
+
+    &__topics {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 1rem 0 1.8rem;
+
+      &__text {
+        padding: 4px 12px;
+        border-radius: 8px;
+      }
+    }
+
+    &__btn {
+      .btn {
+        width: 124px;
+        height: 48px;
+        padding: 12px;
+        border: 1px solid #6070ff;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.about {
+  padding: 7.125rem 1.5rem;
+  border-top-right-radius: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__title {
+    width: 5ch;
+  }
+
+  &__dsc {
+    margin: 10px 0;
+  }
+
+  &__connect {
+    text-transform: uppercase;
+  }
+
+  &__icons__ul {
+    margin: 1.3rem 0 1rem;
+    align-items: center;
+    justify-content: space-between;
+    width: 11rem;
+  }
+
+  .btn {
+    width: 162px;
+    height: 48px;
+    padding: 12px;
+    border: 1px solid #6070ff;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  &__tools {
+    margin: 6px 0;
+    padding: 24px 0;
+  }
+
+  &__lang {
+    &__top {
+      align-items: center;
+      justify-content: space-between;
+      padding: 23px 40px 23px 0;
+      cursor: pointer;
+
+      &__img {
+        transform: rotate(90deg);
+      }
+    }
+
+    &__bottom {
+      li {
+        align-items: center;
+        gap: 1rem;
+        border-radius: 8px;
+        margin: 12px 0;
+        padding: 9px 12px;
+      }
+    }
+  }
+
+  &__frameworks {
+    border-bottom: 1px solid #dfe1e6;
+
+    &__top {
+      align-items: center;
+      justify-content: space-between;
+      padding: 23px 40px 23px 0;
+      cursor: pointer;
+    }
+  }
+
+  &__skills {
+    border-bottom: 1px solid #dfe1e6;
+
+    &__top {
+      align-items: center;
+      justify-content: space-between;
+      padding: 23px 40px 23px 0;
+      cursor: pointer;
+    }
+  }
+}
+
+.contact::before {
+  content: '';
+  position: absolute;
+  background-color: $clr-primary-400;
+  background-image: url('https://raw.githubusercontent.com/ArthurGC/portfolio-microverse/c8dcf1476c30337e684a9325358fe7f2b7410486/images/contact-form-shapes-mobile.svg');
+  background-size: contain;
+  background-position: right;
+  background-origin: content-box;
+  background-repeat: no-repeat;
+  border-top-left-radius: 5rem;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.contact {
+  position: relative;
+  padding: 6.4375rem 1.5rem 1.5rem;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    color: $clr-neutral-100;
+    text-align: center;
+  }
+
+  &__dsc {
+    color: $clr-primary-50;
+    text-align: center;
+    margin: 0.8rem 0 2.8rem;
+  }
+
+  &__container {
+    form {
+      li {
+        input {
+          width: 100%;
+          border-radius: 8px;
+          background: $clr-neutral-100;
+          border: 1px solid #cfd8dc;
+          margin: 10px 0;
+          height: 48px;
+          padding: 0 1rem;
+        }
+
+        label {
+          display: block;
+          color: $clr-neutral-100;
+        }
+
+        textarea {
+          width: 100%;
+          border-radius: 8px;
+          background: $clr-neutral-100;
+          border: 1px solid #cfd8dc;
+          margin-top: 8px;
+          padding: 1rem;
+          resize: none;
+        }
+
+        .btn {
+          width: 162px;
+          height: 48px;
+          padding: 12px;
+          color: #6070ff;
+          cursor: pointer;
+          margin: 18px 0;
+        }
+      }
+    }
+  }
+}
+
+.error {
+  text-align: center;
+  color: rgb(255, 0, 0);
+}

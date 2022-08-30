@@ -1,0 +1,165 @@
+@use 'variables' as *;
+
+.hero {
+  background: $clr-neutral-300;
+  position: relative;
+}
+
+.bg-white {
+  background: $clr-neutral-100;
+}
+
+.bg-n-300 {
+  background: $clr-neutral-300;
+}
+
+.bg-p-50 {
+  background: $clr-primary-50;
+}
+
+.clr-n-900 {
+  color: $clr-neutral-900;
+}
+
+.clr-n-800 {
+  color: $clr-neutral-800;
+}
+
+.clr-n-700 {
+  color: $clr-neutral-700;
+}
+
+.clr-n-600 {
+  color: $clr-neutral-600;
+}
+
+.clr-n-500 {
+  color: $clr-neutral-500;
+}
+
+.clr-p-500 {
+  color: $clr-primary-500;
+}
+
+.clr-p-400 {
+  color: $clr-primary-400;
+}
+
+.clr-p-300 {
+  color: $clr-primary-300;
+}
+
+.fz-40 {
+  font-size: 40px;
+}
+
+.fz-32 {
+  font-size: 32px;
+}
+
+.fz-20 {
+  font-size: 20px;
+}
+
+.fz-18 {
+  font-size: 18px;
+}
+
+.fz-17 {
+  font-size: 17px;
+}
+
+.fz-16 {
+  font-size: 16px;
+}
+
+.fz-15 {
+  font-size: 15px;
+}
+
+.fz-13 {
+  font-size: 13px;
+}
+
+.fz-12 {
+  font-size: 12px;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.lh-52 {
+  line-height: 52px;
+}
+
+.lh-28 {
+  line-height: 28px;
+}
+
+.lh-24 {
+  line-height: 24px;
+}
+
+.lh-20 {
+  line-height: 20px;
+}
+
+.lh-16 {
+  line-height: 16px;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.btn {
+  animation-duration: 0.8s;
+  transition: background 0.8s ease-in-out, color 0.8s ease-in-out;
+}
+
+.btn:hover {
+  animation-name: btn-hover;
+  animation-fill-mode: forwards;
+  animation-delay: 0s;
+}
+
+.btn:focus {
+  background: $clr-primary-700;
+  color: #fff;
+}
+
+@keyframes btn-hover {
+  100% {
+    box-shadow:
+      inset 11rem 0 0 0 $clr-primary-400,
+      0 8px 16px rgba(64, 83, 252, 0.24);
+    color: #fff;
+  }
+}
+
+.hidden {
+  transform: scale(0);
+}
