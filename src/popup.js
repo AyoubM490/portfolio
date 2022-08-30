@@ -41,18 +41,18 @@ export const projects = [
     linkSource: 'https://github.com/AyoubMs/To-Do-list',
   },
   {
-    name: 'Uber Navigation',
-    feature: 'Uber',
-    background: 'Lead Developer',
-    year: '2018',
-    image: 'images/desktop/uber-navigation-project.svg',
+    name: 'Netflox',
+    feature: 'MICROVERSE',
+    background: 'Front-End Dev',
+    year: '2022',
+    image: 'images/netflox.png',
     description:
-      'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
+      'NETFLOX is a web application that fetches TV Shows from an external API - TV Maze API. Users can like and comment on a TV Show. The likes and comments features are all handled by API. Built with Javascript.',
     tool1: 'html',
     tool2: 'css',
     tool3: 'javascript',
-    linkLive: 'https://github.com/ArthurGC/portfolio',
-    linkSource: 'https://arthurgc.github.io/portfolio/',
+    linkLive: 'https://ayoubms.github.io/NETFLOX/',
+    linkSource: 'https://github.com/AyoubMs/NETFLOX',
   },
 ];
 
