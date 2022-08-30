@@ -1,0 +1,42 @@
+@use 'variables' as *;
+
+.navbar__menu__link {
+  transition: color 0.5s ease-in-out, font-size 0.5s ease-in-out;
+}
+
+@media (min-width: 992px) {
+  .navbar__menu__link:hover {
+    color: $clr-primary-500;
+    font-size: 17px;
+  }
+}
+
+.head__icons__link {
+  img {
+    transition: transform 0.5s;
+  }
+}
+
+.about__icons__link {
+  img {
+    transition: transform 0.5s;
+  }
+}
+
+.head__icons__link img:hover {
+  transform: scale(1.5);
+}
+
+.about__icons__link img:hover {
+  transform: scale(1.5);
+}
+
+@keyframes rotate-logo {
+  50% {
+    transform: scale(1.5) rotate(360deg) translateX(-50%);
+  }
+
+  to {
+    transform: scale(1) rotate(720deg) translateX(0);
+  }
+}

@@ -1,0 +1,49 @@
+@use 'variables' as *;
+
+@media (max-width: 992px) {
+  .navbar__menu {
+    visibility: hidden;
+    opacity: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba($color: $clr-primary-400, $alpha: 0.95);
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    transition: left 0.8s, visibility 0.8s, opacity 0.4s;
+    padding: 8rem 2rem;
+    z-index: 50;
+
+    &__ul {
+      flex-direction: column;
+    }
+
+    &__li {
+      margin-bottom: 40px;
+
+      a {
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 44px;
+        color: $clr-neutral-100;
+        transition: color 1s;
+
+        &:hover {
+          color: $clr-neutral-900;
+        }
+      }
+    }
+  }
+}
+
+.active {
+  visibility: visible;
+  opacity: 1;
+  left: 0;
+  transition: left 0.8s, visibility 0.8s, opacity 0.4s;
+}
+
+.blockover {
+  overflow-y: hidden;
+}
