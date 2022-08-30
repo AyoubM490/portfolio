@@ -1,66 +1,66 @@
 export const projects = [
   {
-    name: "Routing Technologies",
-    feature: "MICROVERSE",
-    background: "Front End Dev",
-    year: "2022",
-    image: "images/html-css-js.png",
+    name: 'Routing Technologies',
+    feature: 'MICROVERSE',
+    background: 'Front End Dev',
+    year: '2022',
+    image: 'images/html-css-js.png',
     description:
-      "The Latest Routing Technology is a company whose mission is to change all the old technology routers.",
-    tool1: "html",
-    tool2: "css",
-    tool3: "javascript",
-    linkLive: "https://ayoubms.github.io/capstone-1/index.html",
-    linkSource: "https://github.com/AyoubMs/capstone-1",
+      'The Latest Routing Technology is a company whose mission is to change all the old technology routers.',
+    tool1: 'html',
+    tool2: 'css',
+    tool3: 'javascript',
+    linkLive: 'https://ayoubms.github.io/capstone-1/index.html',
+    linkSource: 'https://github.com/AyoubMs/capstone-1',
   },
   {
-    name: "Power Motorcycles",
-    feature: "MICROVERSE",
-    background: "Full Stack Dev",
-    year: "2022",
-    image: "images/power-motorcycle-reserve.png",
-    description: "Power Motorcycles is a company that rent power motorcycles.",
-    tool1: "React",
-    tool2: "css",
-    tool3: "RoR",
-    linkLive: "https://power-motorcycle.herokuapp.com/",
-    linkSource: "https://github.com/AyoubMs/Book-an-appointment-back-end",
+    name: 'Power Motorcycles',
+    feature: 'MICROVERSE',
+    background: 'Full Stack Dev',
+    year: '2022',
+    image: 'images/power-motorcycle-reserve.png',
+    description: 'Power Motorcycles is a company that rent power motorcycles.',
+    tool1: 'React',
+    tool2: 'css',
+    tool3: 'RoR',
+    linkLive: 'https://power-motorcycle.herokuapp.com/',
+    linkSource: 'https://github.com/AyoubMs/Book-an-appointment-back-end',
   },
   {
-    name: "ToDo List App",
-    feature: "MICROVERSE",
-    background: "Front-End Dev",
-    year: "2022",
-    image: "images/to-do-list.png",
+    name: 'ToDo List App',
+    feature: 'MICROVERSE',
+    background: 'Front-End Dev',
+    year: '2022',
+    image: 'images/to-do-list.png',
     description:
       "A 'To-do list' is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete. You will build a simple website that allows for doing that, and you will do it using ES6 and Webpack!",
-    tool1: "html",
-    tool2: "css",
-    tool3: "javascript",
-    linkLive: "https://ayoubms.github.io/To-Do-list/",
-    linkSource: "https://github.com/AyoubMs/To-Do-list",
+    tool1: 'html',
+    tool2: 'css',
+    tool3: 'javascript',
+    linkLive: 'https://ayoubms.github.io/To-Do-list/',
+    linkSource: 'https://github.com/AyoubMs/To-Do-list',
   },
   {
-    name: "Uber Navigation",
-    feature: "Uber",
-    background: "Lead Developer",
-    year: "2018",
-    image: "images/desktop/uber-navigation-project.svg",
+    name: 'Uber Navigation',
+    feature: 'Uber',
+    background: 'Lead Developer',
+    year: '2018',
+    image: 'images/desktop/uber-navigation-project.svg',
     description:
-      "A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.",
-    tool1: "html",
-    tool2: "css",
-    tool3: "javascript",
-    linkLive: "https://github.com/ArthurGC/portfolio",
-    linkSource: "https://arthurgc.github.io/portfolio/",
+      'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
+    tool1: 'html',
+    tool2: 'css',
+    tool3: 'javascript',
+    linkLive: 'https://github.com/ArthurGC/portfolio',
+    linkSource: 'https://arthurgc.github.io/portfolio/',
   },
 ];
 
-const startingPoint = document.querySelector(".hero");
+const startingPoint = document.querySelector('.hero');
 
 export function createModal() {
   startingPoint.insertAdjacentHTML(
-    "afterend",
+    'afterend',
     `<div class='overlay'>
     <section class='modal'>
     <div class='modal__header flex'>
@@ -93,6 +93,6 @@ export function createModal() {
     </li>
     </ul>
     </section>
-    </div>`
+    </div>`,
   );
 }
