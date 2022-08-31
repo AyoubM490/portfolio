@@ -1,17 +1,17 @@
 export const projects = [
   {
-    name: 'Routing Technologies',
+    name: 'Covid Tracker',
     feature: 'MICROVERSE',
     background: 'Front End Dev',
     year: '2022',
-    image: 'images/html-css-js.png',
+    image: 'images/metrics-app.png',
     description:
-      'The Latest Routing Technology is a company whose mission is to change all the old technology routers.',
-    tool1: 'html',
-    tool2: 'css',
-    tool3: 'javascript',
-    linkLive: 'https://ayoubms.github.io/capstone-1/index.html',
-    linkSource: 'https://github.com/AyoubMs/capstone-1',
+      'This is a Metrics WebApp built with the Narrativa API which provides COVID-19 data. It gives users a rundown of the COVID-19 numeric values in every country. A link to the narrativa API can be found in the README. - GitHub - AyoubMs/React-Capstone: This is a Metrics WebApp built with the Narrativa API which provides COVID-19 data.',
+    tool1: 'React',
+    tool2: 'CSS',
+    tool3: 'Webpack',
+    linkLive: 'https://react-redux-metrics-app.herokuapp.com/',
+    linkSource: 'https://github.com/AyoubMs/React-Capstone',
   },
   {
     name: 'Power Motorcycles',
