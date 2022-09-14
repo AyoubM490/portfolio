@@ -40,18 +40,18 @@ export const projects = [
     linkSource: "https://github.com/AyoubMs/react-quiz-app",
   },
   {
-    name: "Netflox",
+    name: "Dummy Blog",
     feature: "MICROVERSE",
     background: "Front-End Dev",
     year: "2022",
-    image: "images/netflox.png",
+    image: "images/Dummy-Blog.png",
     description:
-      "NETFLOX is a web application that fetches TV Shows from an external API - TV Maze API. Users can like and comment on a TV Show. The likes and comments features are all handled by API. Built with Javascript.",
-    tool1: "html",
-    tool2: "css",
-    tool3: "javascript",
-    linkLive: "https://ayoubms.github.io/NETFLOX/",
-    linkSource: "https://github.com/AyoubMs/NETFLOX",
+      "Dummy Blog made with React-Redux,Jest, Enzyme and Husker Git Hook.",
+    tool1: "enzyme",
+    tool2: "jest",
+    tool3: "react-redux",
+    linkLive: "https://dummy--blog.herokuapp.com/",
+    linkSource: "https://github.com/AyoubMs/Dummy-Blog",
   },
 ];
 
