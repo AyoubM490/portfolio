@@ -23,6 +23,8 @@ export const projects = [
     tool1: "React",
     tool2: "css",
     tool3: "RoR",
+    tool4: "Jest",
+    tool5: "Enzyme",
     linkLive: "https://power-motorcycle.herokuapp.com/",
     linkSource: "https://github.com/AyoubMs/Book-an-appointment-back-end",
   },
@@ -80,6 +82,8 @@ export function createModal() {
     <p class="project-tool1 fw-500 fz-12 lh-16 clr-p-400 bg-p-50"></p>
     <p class="project-tool2 fw-500 fz-12 lh-16 clr-p-400 bg-p-50"></p>
     <p class="project-tool3 fw-500 fz-12 lh-16 clr-p-400 bg-p-50"></p>
+    <p class="project-tool4 fw-500 fz-12 lh-16 clr-p-400 bg-p-50"></p>
+    <p class="project-tool5 fw-500 fz-12 lh-16 clr-p-400 bg-p-50"></p>
     </div>
     <ul class='modal__btn ul flex'>
     <li>
