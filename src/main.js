@@ -35,7 +35,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const projectTool2 = document.querySelector(".project-tool2");
   const projectTool3 = document.querySelector(".project-tool3");
   const projectTool4 = document.querySelector(".project-tool4");
-  const projectTool5 = document.querySelector(".project-tool5");
   const projectLinkLive = document.querySelector(".project-linkLive");
   const projectLinkSource = document.querySelector(".project-linkSource");
 
@@ -56,6 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
         projectTool1.textContent = `${projects[button.id].tool1}`;
         projectTool2.textContent = `${projects[button.id].tool2}`;
         projectTool3.textContent = `${projects[button.id].tool3}`;
+        projectTool4.textContent = `${projects[button.id].tool4}`;
         projectLinkLive.setAttribute("href", `${projects[button.id].linkLive}`);
         projectLinkSource.setAttribute(
           "href",

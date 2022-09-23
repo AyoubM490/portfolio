@@ -1,17 +1,19 @@
 export const projects = [
   {
-    name: "Covid Tracker",
+    name: "Exercise Tracker",
     feature: "MICROVERSE",
-    background: "Front End Dev",
+    background: "Full Stack Dev",
     year: "2022",
-    image: "images/metrics-app.png",
+    image: "images/exercise-tracker.png",
     description:
-      "This is a Metrics WebApp built with the Narrativa API which provides COVID-19 data. It gives users a rundown of the COVID-19 numeric values in every country. A link to the narrativa API can be found in the README. - GitHub - AyoubMs/React-Capstone: This is a Metrics WebApp built with the Narrativa API which provides COVID-19 data.",
-    tool1: "React",
-    tool2: "CSS",
-    tool3: "Webpack",
-    linkLive: "https://react-redux-metrics-app.herokuapp.com/",
-    linkSource: "https://github.com/AyoubMs/React-Capstone",
+      "This is a full stack JavaScript app that allows users to create and track daily workouts. Users can log multiple exercises in a workout on a given day.",
+    tool1: "MongoDB",
+    tool2: "Express",
+    tool3: "React",
+    tool4: "NodeJS",
+    tool5: "React Testing Library",
+    linkLive: "https://create-exercise.herokuapp.com/",
+    linkSource: "https://github.com/AyoubMs/exercise-tracker",
   },
   {
     name: "Power Motorcycles",
@@ -83,7 +85,6 @@ export function createModal() {
     <p class="project-tool2 fw-500 fz-12 lh-16 clr-p-400 bg-p-50"></p>
     <p class="project-tool3 fw-500 fz-12 lh-16 clr-p-400 bg-p-50"></p>
     <p class="project-tool4 fw-500 fz-12 lh-16 clr-p-400 bg-p-50"></p>
-    <p class="project-tool5 fw-500 fz-12 lh-16 clr-p-400 bg-p-50"></p>
     </div>
     <ul class='modal__btn ul flex'>
     <li>
